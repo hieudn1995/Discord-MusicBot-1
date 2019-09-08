@@ -8,9 +8,6 @@ client.queue = new Map();
 client.config = config;
 
 client.on('ready', function() {
-    client.user.setActivity(config.prefix+"help");
-    console.log("Launched")
-});
 
 client.on('message', function(message) {
   if (message.author.bot) return;
