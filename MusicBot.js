@@ -8,7 +8,7 @@ client.queue = new Map();
 client.config = config;
 
 client.on('ready', function() {
-    client.user.setActivity(config.presence+" | "+config.prefix+"help");
+    client.user.setActivity(config.prefix+"help");
     console.log("Launched")
 });
 
