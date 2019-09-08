@@ -7,8 +7,6 @@ client.commands = new discord.Collection();
 client.queue = new Map();
 client.config = config;
 
-client.on('ready', function() {
-
 client.on('message', function(message) {
   if (message.author.bot) return;
   if (message.content.indexOf(config.prefix) !== 0) return;
